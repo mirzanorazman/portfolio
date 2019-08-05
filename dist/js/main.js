@@ -8,6 +8,18 @@ const navItems = document.querySelectorAll(".nav-item");
 // Set initial state of the menu
 let showMenu = false;
 
+// Hide nav bar on scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
 menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
