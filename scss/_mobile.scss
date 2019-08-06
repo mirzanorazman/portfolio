@@ -74,30 +74,41 @@
 
 // Smartphones
 @include mediaSm {
+  .menu-btn {
+    right: 1rem;
+  }
+
   main {
     align-items: center;
     text-align: center;
 
     padding: 1rem;
-    #home {
-      min-height: calc(90vh-10px);
-      margin-top: 1vh;
-    }
 
     .intro {
-      margin-top: 7rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      padding: 15px;
       grid-template-areas:
         "introimage"
         "introtext";
+
+      grid-gap: 10px;
+      grid-template-columns: 1fr;
 
       .intro-img {
         grid-area: introimage;
         width: 40%;
       }
       .intro-text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
-      grid-template-columns: 1fr;
     }
+  }
+
+  h1,
+  h2,
+  h3 {
+    padding: 10px;
+    margin-bottom: 0;
   }
 }
