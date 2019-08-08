@@ -43,3 +43,18 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+$(".playbutton,img").click(function() {
+  var video =
+    '<iframe src="' + $(".thumbnails").attr("data-video") + '"></iframe>';
+  $(".video").hide();
+  $(".tube").html(video);
+  $(".close").show();
+});
+$(".close").click(function() {
+  $(".video").show();
+  $(".tube").empty();
+  $(".close").hide();
+});
+
+// var video = '<iframe src="' + $("img").attr("data-video") + '"></iframe>';

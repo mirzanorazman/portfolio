@@ -105,7 +105,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -165,7 +165,8 @@ main {
 
 .intro {
   height: 80vh;
-  margin-top: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "introimage introtext";
@@ -177,9 +178,12 @@ main {
   .intro .intro-img {
     grid-area: introimage;
     margin: auto;
-    width: 70%;
+    width: 45%;
     border-radius: 70%;
     border: #91c6ff 3px solid; }
+  .intro .intro-text {
+    margin: auto;
+    padding: 15px; }
 
 .about-info {
   display: grid;
@@ -318,8 +322,9 @@ main {
       grid-template-columns: 1fr; }
       main .intro .intro-img {
         grid-area: introimage;
-        width: 40%; }
+        width: 50%; }
       main .intro .intro-text {
+        margin-top: 0%;
         font-size: 1.3rem; }
   h1,
   h2,
