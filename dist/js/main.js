@@ -44,17 +44,47 @@ function toggleMenu() {
   }
 }
 
-$(".playbutton,img").click(function() {
+// Youtube Vids Handler
+$(".close").hide();
+$(".playbutton-icon").click(function() {
   var video =
-    '<iframe src="' + $(".thumbnails").attr("data-video") + '"></iframe>';
-  $(".video").hide();
-  $(".tube").html(video);
-  $(".close").show();
-});
-$(".close").click(function() {
-  $(".video").show();
-  $(".tube").empty();
-  $(".close").hide();
+    '<iframe src="' +
+    $(this)
+      .parent()
+      .parent()
+      .find(".thumbnails")
+      .attr("data-video") +
+    '"></iframe>';
+
+  $(this)
+    .parent()
+    .parent()
+    .find(".thumbnails")
+    .hide();
+  $(this)
+    .parent()
+    .hide();
+  $(this)
+    .parent()
+    .parent()
+    .find(".yt-container")
+    .html(video);
+
+  $(this)
+    .parent()
+    .parent()
+    .find(".close")
+    .show();
 });
 
-// var video = '<iframe src="' + $("img").attr("data-video") + '"></iframe>';
+$(".close").click(function() {
+  $(this)
+    .parent()
+    .find("img, .overlay")
+    .show();
+  $(this)
+    .parent()
+    .find(".yt-container")
+    .empty();
+  $(this).hide();
+});

@@ -1,7 +1,7 @@
-$primary-color: #14304d;
-$secondary-color: #91c6ff;
+$primary-color: #0d3b63;
+$secondary-color: #72b2d6;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
+$home-image: url(../img/tower.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -11,9 +11,15 @@ $background-opacity: 0.9;
 @mixin background {
   @if $show-home-image {
     &#bg-img {
+      height: 500px;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      text-align: center;
+      margin: auto;
+      padding: 0;
 
       &:after {
         content: "";

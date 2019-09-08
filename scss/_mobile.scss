@@ -47,6 +47,8 @@
 
     .portrait {
       background: url("../img/portrait_small.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
       width: 150px;
       height: 150px;
     }
