@@ -69,6 +69,11 @@
     grid-template-columns: 1fr;
   }
 
+  .overlay {
+    bottom: 5%;
+    left: 15%;
+  }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
