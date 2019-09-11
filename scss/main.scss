@@ -91,8 +91,8 @@ main {
   margin-bottom: 2.5rem;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "introimage introtext";
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "introimage introtext introtext";
+  grid-template-columns: repeat(3, 1fr);
 
   h3 {
     margin: 0;
@@ -113,8 +113,9 @@ main {
   }
 
   .intro-text {
+    grid-area: introtext;
     margin: auto;
-    padding: 15px;
+    padding: 20px;
   }
 }
 
@@ -313,8 +314,9 @@ iframe {
 }
 
 #main-footer {
+  font-size: 0.7rem;
   text-align: center;
-  padding: 1rem;
+  padding: 1.3rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
