@@ -53,9 +53,9 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/portrait_small.jpg");
+      width: 200px;
+      height: 200px;
+      background: url("../img/logo_contrast.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -225,16 +225,19 @@ main {
     border-bottom: #72b2d6 5px solid; }
 
 .film-section {
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
   padding: 10px; }
 
 .film-text {
+  margin-bottom: 0.5rem;
   font-family: "Lato", sans-serif;
   font-weight: lighter; }
 
 .video {
   align-items: center;
+  text-align: center;
   position: relative;
   width: 100%;
   height: 45%; }
@@ -247,8 +250,7 @@ main {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 15%;
   height: auto;
   width: 70%;
   opacity: 0;
@@ -260,7 +262,7 @@ main {
 
 .playbutton-icon {
   color: white;
-  font-size: 420%;
+  font-size: 450%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -278,20 +280,31 @@ iframe {
 .fa-times-circle {
   font-size: 200%; }
 
-.youtube-link:hover {
-  color: #72b2d6;
-  transition: all 0.5s ease-out; }
+.youtube-link {
+  margin-top: 0.5rem;
+  padding: 10px;
+  border: 3px solid #72b2d6; }
+  .youtube-link:hover {
+    color: #72b2d6;
+    transition: all 0.5s ease-out; }
 
 .photography {
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
   padding: 10px; }
+
+.photo-text {
+  margin-bottom: 1rem; }
 
 .photo {
   width: 40%; }
 
 .social {
+  text-align: center;
   margin-bottom: 2.5rem; }
+  .social .social-text {
+    margin-bottom: 0.5rem; }
 
 .projects {
   display: grid;
@@ -380,11 +393,10 @@ iframe {
     height: 25vh;
     transform: translate3d(-100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
       background-size: contain;
       background-repeat: no-repeat;
-      width: 150px;
-      height: 150px; }
+      width: 100px;
+      height: 100px; }
   .intro {
     margin-top: 2rem; }
   .about-info {
@@ -416,6 +428,15 @@ iframe {
       main .intro .intro-text {
         margin-top: 0%;
         font-size: 1.3rem; }
+  .thumbnails {
+    width: 100%; }
+  .overlay {
+    width: 100%;
+    left: 0; }
+  .youtube-link {
+    margin-top: 0.5rem; }
+  .playbutton-icon {
+    font-size: 250%; }
   h1,
   h2,
   h3 {

@@ -159,18 +159,21 @@ main {
 }
 
 .film-section {
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
   padding: 10px;
 }
 
 .film-text {
+  margin-bottom: 0.5rem;
   font-family: "Lato", sans-serif;
   font-weight: lighter;
 }
 
 .video {
   align-items: center;
+  text-align: center;
   position: relative;
   width: 100%;
   height: 45%;
@@ -185,8 +188,8 @@ main {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 15%;
+  // right: 0;
   height: auto;
   width: 70%;
   opacity: 0;
@@ -200,7 +203,7 @@ main {
 
 .playbutton-icon {
   color: white;
-  font-size: 420%;
+  font-size: 450%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -223,6 +226,9 @@ iframe {
 }
 
 .youtube-link {
+  margin-top: 0.5rem;
+  padding: 10px;
+  border: 3px solid $secondary-color;
   &:hover {
     color: $secondary-color;
     @include easeOut();
@@ -231,9 +237,14 @@ iframe {
 
 // Photography section
 .photography {
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
   padding: 10px;
+}
+
+.photo-text {
+  margin-bottom: 1rem;
 }
 
 .photo {
@@ -242,7 +253,12 @@ iframe {
 
 // Social section
 .social {
+  text-align: center;
   margin-bottom: 2.5rem;
+
+  .social-text {
+    margin-bottom: 0.5rem;
+  }
 }
 
 // Work/Projects

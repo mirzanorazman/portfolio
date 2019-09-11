@@ -46,11 +46,10 @@
     transform: translate3d(-100%, 0, 0);
 
     .portrait {
-      background: url("../img/portrait_small.jpg");
       background-size: contain;
       background-repeat: no-repeat;
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -111,6 +110,23 @@
         font-size: 1.3rem;
       }
     }
+  }
+
+  .thumbnails {
+    width: 100%;
+  }
+
+  .overlay {
+    width: 100%;
+    left: 0;
+  }
+
+  .youtube-link {
+    margin-top: 0.5rem;
+  }
+
+  .playbutton-icon {
+    font-size: 250%;
   }
 
   h1,
