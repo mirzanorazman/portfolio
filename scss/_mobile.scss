@@ -55,6 +55,10 @@
 
   .intro {
     margin-top: 2rem;
+
+    .intro-img {
+      width: 65%;
+    }
   }
 
   .about-info {
@@ -71,6 +75,10 @@
   .overlay {
     bottom: 5%;
     left: 15%;
+  }
+
+  .photo-landscape {
+    width: 40%;
   }
 
   .projects {
@@ -127,6 +135,14 @@
 
   .playbutton-icon {
     font-size: 250%;
+  }
+
+  .photo {
+    width: 60%;
+  }
+
+  .photo-landscape {
+    width: 60%;
   }
 
   h1,

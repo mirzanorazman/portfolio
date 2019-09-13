@@ -197,6 +197,7 @@ main {
     border: #72b2d6 3px solid; }
   .intro .intro-text {
     grid-area: introtext;
+    font-size: 1.5rem;
     margin: auto;
     padding: 20px; }
 
@@ -281,11 +282,13 @@ iframe {
   font-size: 200%; }
 
 .youtube-link {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  top: 50%;
   padding: 10px;
   border: 3px solid #72b2d6; }
   .youtube-link:hover {
-    color: #72b2d6;
+    background-color: #72b2d6;
+    color: #0d3b63;
     transition: all 0.5s ease-out; }
 
 .photography {
@@ -298,7 +301,11 @@ iframe {
   margin-bottom: 1rem; }
 
 .photo {
-  width: 40%; }
+  width: 30%;
+  margin: 10px; }
+
+.photo-landscape {
+  width: 50%; }
 
 .social {
   text-align: center;
@@ -399,12 +406,16 @@ iframe {
       height: 100px; }
   .intro {
     margin-top: 2rem; }
+    .intro .intro-img {
+      width: 65%; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .overlay {
     bottom: 5%;
     left: 15%; }
+  .photo-landscape {
+    width: 40%; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
@@ -437,6 +448,10 @@ iframe {
     margin-top: 0.5rem; }
   .playbutton-icon {
     font-size: 250%; }
+  .photo {
+    width: 60%; }
+  .photo-landscape {
+    width: 60%; }
   h1,
   h2,
   h3 {
