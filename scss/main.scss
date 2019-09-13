@@ -114,6 +114,7 @@ main {
 
   .intro-text {
     grid-area: introtext;
+    font-size: 1.5rem;
     margin: auto;
     padding: 20px;
   }
@@ -226,11 +227,13 @@ iframe {
 }
 
 .youtube-link {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  top: 50%;
   padding: 10px;
   border: 3px solid $secondary-color;
   &:hover {
-    color: $secondary-color;
+    background-color: $secondary-color;
+    color: $primary-color;
     @include easeOut();
   }
 }
@@ -248,7 +251,12 @@ iframe {
 }
 
 .photo {
-  width: 40%;
+  width: 30%;
+  margin: 10px;
+}
+
+.photo-landscape {
+  width: 50%;
 }
 
 // Social section
